@@ -1,16 +1,17 @@
 name: Build
 
 on:
-  push:
-    branches: [develop]
-    tags-ignore:
-      - '**'
+  workflow_dispatch
+#   push:
+#     branches: [develop]
+#     tags-ignore:
+#       - '**'
 
-  pull_request:
-    branches: [develop]
+#   pull_request:
+#     branches: [develop]
 
-  release:
-    types: [published]
+#   release:
+#     types: [published]
 
 jobs:
   Verify:
